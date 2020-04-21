@@ -1047,49 +1047,41 @@ function ConvertEndingValues (styleid) {
     //$module(ExportConverters)
     ending_style = MSplitString(styleid, '.');
     num = ' ';
-    label = ' ';
-    type = ' ';
+    lendsym = ' ';
 
     switch(ending_style[3])
     {
         case ('1st')
         {
-            num = 1;
-            label = '1.';
-            type = 'closed';
+            num = '1.';
         }
         case ('1st_n_2nd')
         {
-            num = 1;
-            label = '1. 2.';
-            type = 'closed';
+            num = '1.2.';
         }
         case ('2nd')
         {
-            num = 2;
-            label = '2.';
+            num = '2.';
             if (ending_style[-1] = 'closed')
             {
-                type = 'closed';
+
             }
             else
             {
-                type = 'open';
+                lendsym = 'none';
             }
         }
         case ('3rd')
         {
-            num = 3;
-            label = '3.';
-            type = 'closed';
+            num = '3.';
         }
         case ('open')
         {
-            type = 'open';
+            lendsym = 'none';
         }
         case ('closed')
         {
-            type = 'closed';
+
         }
     }
 

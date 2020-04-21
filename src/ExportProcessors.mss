@@ -438,8 +438,7 @@ function ProcessVolta (mnum) {
         voltainfo = ConvertEndingValues(voltaObject.StyleId);
 
         libmei.AddAttribute(voltaElement, 'n', voltainfo[0]);
-        libmei.AddAttribute(voltaElement, 'label', voltainfo[1]);
-        libmei.AddAttribute(voltaElement, 'type', voltainfo[2]);
+        libmei.AddAttribute(voltaElement, 'lendsym', voltainfo[1]);
 
         if (voltaObject.EndBarNumber != mnum)
         {
