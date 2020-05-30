@@ -795,26 +795,6 @@ function ConvertPositionWithDurationToTimestamp (bobj) {
     return measureDuration & 'm+' & position;
 } //$end
 
-function ConvertTupletStyle (tupletStyle) {
-    //$module(ExportConverters.mss)
-    switch (tupletStyle)
-    {
-        case(TupletNoNumber)
-        {
-            libmei.AddAttribute(activeTuplet, 'num.visible', 'false');
-        }
-        case(TupletLeft)
-        {
-            libmei.AddAttribute(activeTuplet, 'num.format', 'count');
-        }
-        case(TupletLeftRight)
-        {
-            libmei.AddAttribute(activeTuplet, 'num.format', 'ratio');
-        }
-    }
-
-}  //$end
-
 function ConvertBarline (linetype) {
     //$module(ExportConverters.mss)
     switch(linetype)
