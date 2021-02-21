@@ -1455,6 +1455,10 @@ function GenerateTuplet(tupletObj) {
         {
             libmei.AddAttribute(tuplet, 'num.format', 'ratio');
         }
+        case(TupletLeftRightNote)
+        {
+            libmei.AddAttribute(tuplet, 'num.format', 'ratio');
+        }
     }
 
     tupletBracket = tupletObj.Bracket;
