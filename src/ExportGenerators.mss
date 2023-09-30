@@ -13,7 +13,7 @@ function GenerateMEIHeader () {
     libmei.AddChild(header, fileD);
     libmei.AddChild(fileD, titleS);
 
-    //encodingDesc must preceed workList in MEI 4.0
+    //encodingDesc must preceed workList
     encodingD = libmei.EncodingDesc();
     libmei.AddChild(header, encodingD);
     appI = GenerateApplicationInfo();
@@ -233,7 +233,7 @@ function GenerateMEIMusic () {
                 currentScoreDef = libmei.ScoreDef();
             }
 
-            libmei.AddAttribute(currentScoreDef, 'key.sig', ConvertKeySignature(currKeyS.Sharps));
+            libmei.AddAttribute(currentScoreDef, 'keysig', ConvertKeySignature(currKeyS.Sharps));
         }
 
         if (currentScoreDef != null)
