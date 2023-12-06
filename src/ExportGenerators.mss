@@ -1057,7 +1057,7 @@ function GenerateMeterAttributes (scoredef, barNumber) {
     }
     if (null = timesig or timesig.Hidden)
     {
-        libmei.AddAttribute(scoredef, 'meter.form', 'invis');
+        libmei.AddAttribute(scoredef, 'meter.visible', 'false');
     }
     if (null = timesig)
     {
