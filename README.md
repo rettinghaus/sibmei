@@ -29,7 +29,8 @@ You need to create a symbolic link from the Sibelius plugin folder to the build 
 Example for Mac:
 
 ```shell
-ln -s "~/path/to/sibmei/build/develop" "~/Library/Application Support/Avid/Sibelius 7.5/Plugins/MEI Export"
+cd sibmei
+ln -s "$(pwd)/build/develop" ~/Library/Application\ Support/Avid/Sibelius/Plugins/MEI\ Export
 ```
 
 Example for Windows (run as administrator):
@@ -37,6 +38,9 @@ Example for Windows (run as administrator):
 ```batch
 mklink /D "%APPDATA%\Avid\Sibelius\Plugins\MEI Export" "%HOMEPATH%\path\to\sibmei\build\develop"
 ```
+
+> [!NOTE]
+> You may want to have a look on [how to install plug-ins](https://www.sibelius.com/download/plugins/index.html?help=install).
 
 ### Building the plugin
 
