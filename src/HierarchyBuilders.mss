@@ -596,7 +596,7 @@ function AddStaffDefsToHierarchy (score, staffGrpByStaffNum, barnum) {
         libmei.AddAttribute(std, 'clef.dis.place', clefinfo[3]);
 
         keysig = s.CurrentKeySignature(barnum);
-        libmei.AddAttribute(std, 'key.sig', ConvertKeySignature(keysig.Sharps));
+        libmei.AddAttribute(std, 'keysig', ConvertKeySignature(keysig.Sharps));
 
         if (keysig.Major)
         {
