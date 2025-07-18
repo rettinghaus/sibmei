@@ -11,9 +11,9 @@ const meiMdivs = utils.getTestMeiDom('mdivs.mei');
 const meiNRsmall = utils.getTestMeiDom('nrsmall.mei');
 const meiBarRests = utils.getTestMeiDom('barrests.mei');
 
-describe("Head 4.0", () => {
+describe("Head 5.1", () => {
   it("correct meiversion is set", () => {
-    assert.strictEqual(xpath.evaluateXPath('/*:mei/@meiversion', meiHead), "4.0.1");
+    assert.strictEqual(xpath.evaluateXPath('/*:mei/@meiversion', meiHead), "5.1");
   });
   it("the parent of <work> is <workList>", () => {
     assert.strictEqual(xpath.evaluateXPath('//*:work', meiHead).parentNode.localName, "workList");
