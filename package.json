@@ -3,7 +3,7 @@
   "version": "4.1.0",
   "description": "MEI export plugin for Avid Sibelius",
   "sibmei": {
-    "meiVersion": "4.0.1"
+    "meiVersion": "5.1"
   },
   "repository": {
     "type": "git",

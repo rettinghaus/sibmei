@@ -21,7 +21,7 @@ const xpath = require('fontoxpath');
 
 // TODO: Don't hard code the MEI version. Create a global variable that is
 // shared with ProcessScore() in ExportProcessors.mss
-const meiVersion = "4.0.1";
+const meiVersion = "5.1";
 const schemaUrl = `https://raw.githubusercontent.com/music-encoding/music-encoding/v${meiVersion}/schemata/mei-CMN.rng`;
 const directories = {
   src: "src",
